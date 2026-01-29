@@ -16,7 +16,7 @@ exports.LoadUtils = () => {
             await window.Store.SendSeen.sendSeen({
                 chat: chat,
                 threadId: undefined
-            });
+            });         
             window.Store.WAWebStreamModel.Stream.markUnavailable();
             return true;
         }
@@ -433,7 +433,7 @@ exports.LoadUtils = () => {
             signal: controller.signal,
             mediaKey,
             uploadQpl: window.Store.MediaUpload.startMediaUploadQpl({
-                entryPoint: "MediaUpload"
+                entryPoint: 'MediaUpload'
             }),
         });
 
