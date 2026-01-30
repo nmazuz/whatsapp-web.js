@@ -13,6 +13,8 @@
     <br />
 </div>
 
+## ◾ This fork was created to add fixes more quickly to the main branch.
+
 ## About
 **A WhatsApp API client that operates via the WhatsApp Web browser.**
 
