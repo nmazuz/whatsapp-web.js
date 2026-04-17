@@ -18,7 +18,10 @@ async function exposeFunctionIfAbsent(page, name, fn) {
         // Ignore if binding is already registered (Puppeteer's internal registry
         // keeps bindings after navigation even though window[name] is cleared),
         // or if an iframe was closed mid-navigation (TargetCloseError).
-        if (!msg.includes('already exists') && !msg.includes('Session closed')) {
+        if (
+            !msg.includes('already exists') &&
+            !msg.includes('Session closed')
+        ) {
             throw e;
         }
     }
